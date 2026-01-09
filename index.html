@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- SEO básico -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sushi Costa | Delivery fresco en Ciudad de la Costa</title>
+  <meta name="description" content="Sushi fresco, rolls, entradas y bebidas. Pedí fácil con carrito, WhatsApp directo y llamada. Ciudad de la Costa. Horarios y promociones." />
+  <meta name="keywords" content="sushi, delivery, rolls, entradas, bebidas, Ciudad de la Costa, Uruguay, comida japonesa" />
+  <link rel="canonical" href="https://tudominio.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sushi Costa | Delivery fresco en Ciudad de la Costa" />
+  <meta property="og:description" content="Carrito de compras, WhatsApp directo, llamada y menú con imágenes. Entradas, rolls y bebidas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tudominio.com/" />
+  <meta property="og:image" content="https://tudominio.com/assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <img src="imag/image.png" alt="Sushi Costa logo" class="logo" />
+      <div class="cta-row">
+        <a class="btn primary" href="#menu" aria-label="Ver menú">Ver menú</a>
+        <!-- <a class="btn outline call-btn" id="callNow" href="#" aria-label="Llamar ahora">Llamar ahora</a> -->
+      </div>
+      <nav class="social-nav" aria-label="Redes sociales y ubicación">
+  <a href="https://www.instagram.com/gove_sushi/" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://facebook.com/tu_pagina" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="#" id="whatsappQuick" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://maps.google.com/?q=Sushi%20Costa%20Ciudad%20de%20la%20Costa" target="_blank" rel="noopener" aria-label="Google Maps">
+    <i class="fas fa-map-marker-alt"></i>
+  </a>
+</nav>
+
+      <div class="hours" id="hoursStatus">
+        <span class="dot"></span>
+        <span class="hours-text">Jue a Dom | 19:30–23:30 hs</span>
+      </div>
+      <div class="ubitext" id="ubiText">
+        <span class="ubi"></span>
+        <span class="ubi-text">Ciudad de la costa</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="menu" class="menu-section container">
+      <h2>Menú</h2>
+
+      <!-- Entradas -->
+      <div class="category">
+        <div class="category-header">
+          <h3>Entradas</h3>
+          <div class="filters">
+            <button class="chip" data-filter="all">Todas</button>
+            <button class="chip" data-filter="vegetariano">Vegetariano</button>
+            <button class="chip" data-filter="sin-gluten">Sin gluten</button>
+          </div>
+        </div>
+        <div class="products-grid">
+          <article class="product-card" data-tags="vegetariano">
+            <img src="imag/edamame1.jpeg" alt="Edamame" />
+            <div class="product-info">
+              <h4>Edamame</h4>
+              <p class="desc">Soja joven al vapor con sal marina.</p>
+              <div class="price-row">
+                <span class="price">$180 UYU</span>
+              </div>
+              <button class="btn small add-to-cart" data-id="edamame" data-name="Edamame" data-price="180" data-img="assets/edamame.jpg">Agregar</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-tags="sin-gluten">
+            <img src="imag/gyoza.jpeg" alt="Gyozas de cerdo (5u)" />
+            <div class="product-info">
+              <h4>Gyozas de cerdo (5u)</h4>
+              <p class="desc">Dumplings a la plancha con salsa ponzu.</p>
+              <div class="price-row">
+                <span class="price">$260 UYU</span>
+                <span class="extra">+ Salsa spicy $40</span>
+              </div>
+              <button class="btn small add-to-cart" data-id="gyozas" data-name="Gyozas de cerdo (5u)" data-price="260" data-img="assets/gyozas.jpg">Agregar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Platos -->
+      <div class="category">
+        <div class="category-header">
+          <h3>Platos</h3>
+          <div class="filters">
+            <button class="chip" data-filter="all">Todos</button>
+            <button class="chip" data-filter="especial">Especiales</button>
+          </div>
+        </div>
+        <div class="products-grid">
+          <article class="product-card" data-tags="especial">
+            <img src="imag/calif.jpg" alt="California roll (8u)" />
+            <div class="product-info">
+              <h4>California roll (8u)</h4>
+              <p class="desc">Palta, surimi, pepino y sésamo.</p>
+              <div class="price-row">
+                <span class="price">$320 UYU</span>
+              </div>
+              <button class="btn small add-to-cart" data-id="california" data-name="California roll (8u)" data-price="320" data-img="assets/california-roll.jpg">Agregar</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="imag/salm.webp" alt="Salmón roll (8u)" />
+            <div class="product-info">
+              <h4>Salmón roll (8u)</h4>
+              <p class="desc">Salmón fresco, queso crema y cebollín.</p>
+              <div class="price-row">
+                <span class="price">$390 UYU</span>
+              </div>
+              <button class="btn small add-to-cart" data-id="salmon" data-name="Salmón roll (8u)" data-price="390" data-img="assets/salmon-roll.jpg">Agregar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="category">
+        <div class="category-header">
+          <h3>Bebidas</h3>
+          <div class="filters">
+            <button class="chip" data-filter="all">Todas</button>
+            <button class="chip" data-filter="sin-azucar">Sin azúcar</button>
+          </div>
+        </div>
+        <div class="products-grid">
+          <article class="product-card" data-tags="sin-azucar">
+            <img src="imag/agua.webp" alt="Agua sin gas 500ml" />
+            <div class="product-info">
+              <h4>Agua sin gas 500ml</h4>
+              <p class="desc">Refrescante, ideal para acompañar.</p>
+              <div class="price-row">
+                <span class="price">$90 UYU</span>
+              </div>
+              <button class="btn small add-to-cart" data-id="agua" data-name="Agua sin gas 500ml" data-price="90" data-img="assets/agua.jpg">Agregar</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="imag/cerv.jpg" alt="Cerveza japonesa 330ml" />
+            <div class="product-info">
+              <h4>Cerveza japonesa 330ml</h4>
+              <p class="desc">Ligera y fría.</p>
+              <div class="price-row">
+                <span class="price">$180 UYU</span>
+              </div>
+              <button class="btn small add-to-cart" data-id="cerveza" data-name="Cerveza japonesa 330ml" data-price="180" data-img="assets/cerveza.jpg">Agregar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrito lateral -->
+    <aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+      <button class="cart-toggle" id="cartToggle" aria-expanded="true">
+        🧺 Carrito <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <div class="cart-body" id="cartBody">
+        <ul class="cart-items" id="cartItems"></ul>
+
+        <div class="cart-inputs">
+          <label class="input-row">
+            <span>Dirección de entrega</span>
+            <input type="text" id="address" placeholder="Calle y número, referencia" />
+          </label>
+          <label class="input-row">
+            <span>Notas / Consulta</span>
+            <textarea id="notes" rows="3" placeholder="Ej: sin salsa spicy, timbre roto, etc."></textarea>
+          </label>
+        </div>
+
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="subtotal">$0 UYU</strong>
+          </div>
+          <div class="summary-row">
+            <span>Delivery (estimado)</span>
+            <strong id="delivery">$0 UYU</strong>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong id="total">$0 UYU</strong>
+          </div>
+        </div>
+
+        <div class="cart-actions">
+          <button class="btn outline" id="reviewOrder">Revisar pedido</button>
+          <button class="btn primary" id="sendWhatsapp">Realizar pedido</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Confirmación visual del pedido -->
+    <div class="modal" id="orderModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h4>Confirmar pedido</h4>
+          <button class="icon-btn" id="closeModal" aria-label="Cerrar">✕</button>
+        </div>
+        <div class="modal-body" id="orderSummary">
+          <!-- Se rellena dinámicamente -->
+        </div>
+        <div class="modal-footer">
+          <button class="btn outline" id="editOrder">Editar</button>
+          <button class="btn primary" id="confirmAndSend">Enviar a WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="about-section container">
+      <h2>Nosotros</h2>
+      <div class="about-grid">
+        <div>
+          <p>Somos Sushi Costa: fresco, cercano y auténtico. Trabajamos con ingredientes seleccionados y armamos cada pedido al momento para mantener el sabor y la textura perfectos.</p>
+          <ul class="values">
+            <li><strong>Frescura:</strong> insumos del día y cadena de frío cuidada.</li>
+            <li><strong>Rapidez:</strong> tiempos de entrega claros y seguimiento.</li>
+            <li><strong>Atención:</strong> personal amable y capacitado.</li>
+          </ul>
+        </div>
+        <figure class="about-figure">
+          <img src="imag/equipotra.webp" alt="Equipo de Sushi Costa preparando pedidos" />
+          <figcaption>Equipo en cocina, Ciudad de la Costa.</figcaption>
+        </figure>
+      </div>
+      <div class="policy">
+        <h3>Delivery y formas pagos</h3>
+        <p>Entregamos en Ciudad de la Costa y zonas cercanas. Aceptamos efectivo y transferencias. Consulta por promociones y combos especiales.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <small>© 2026 Sushi Costa. Todos los derechos reservados.</small>
+      <nav class="footer-nav">
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#" id="callFooter">Llamar</a>
+        <a href="#" id="waFooter">WhatsApp</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+</html>
